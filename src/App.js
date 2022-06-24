@@ -1,6 +1,7 @@
 
 import './App.css';
-import React from 'react';
+import './components/Cards.css';
+import React, {useState} from 'react';
 
 const colorCards = [
   { id: 1,
@@ -22,12 +23,18 @@ const colorCards = [
 function App() {
   return (
     <>
-      <Cards name="colorCard" style={{ backgroundColor: color }}>
-        <button type="submit">Karte Speichern!</button>
-      </Cards>
+    <div className="color__Card">
+      <div className="hex__Code">
+
+      </div>
+    </div>
+      
     </>
    
   );
 }
 
 export default App;
+
+
+
